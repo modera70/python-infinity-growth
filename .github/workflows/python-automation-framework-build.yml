@@ -9,6 +9,9 @@ jobs:
   build-python-automation-framework-image:
     name: Build python automation framework docker image
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       #Check-out your repository under $GITHUB_WORKSPACE, so your workflow can access it
       - uses: actions/checkout@v3
