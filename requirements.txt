@@ -1,0 +1,8 @@
+selenium-page-factory
+selenium~=4.7.2
+pytest~=7.2.1
+pytest-xdist
+pytest-html
+allure-pytest
+requests
+assertpy

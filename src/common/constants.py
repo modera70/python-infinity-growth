@@ -1,0 +1,3 @@
+DRIVER_CAPABILITIES_KEY = 'capabilities'
+DRIVER_TIMEOUT_KEY = 'timeout'
+DRIVER_HUB_URL_KEY = 'hub_url'
