@@ -8,7 +8,7 @@ Automation framework developed by using python and Selenium Web Driver.
 - Pytest as test framework
 - Latest version of Selenium Web Driver
 - Page Factory and Page Object Model implemented
-- Assertpy used in Books service tests
+  - Assertpy used in Amazon service tests
 - Setup and TearDown methods by using pytest fixtures
 - Selenium grid(docker-containers-based) to perform cross-browsing testing. UI-related test cases are executed on the following browsers:
   - Chrome
@@ -22,7 +22,7 @@ Automation framework developed by using python and Selenium Web Driver.
 2. Clone this repository
 3. Open terminal and navigate to cloned repository
 4. Run docker-compose file:
- > $ docker-compose up --abort-on-container-exit
+ > $ docker-compose -f docker-compose-arm.yml up 
  
   Open a browser and navigate to http://loclahost:4444 to see the remote sessions:
 

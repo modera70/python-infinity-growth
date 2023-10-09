@@ -17,20 +17,6 @@ services:
     ports:
       - "7902:7900"
 
-  edge:
-    image: selenium/node-edge:4.8.0-20230123
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_VNC_NO_PASSWORD=1
-      - SE_VNC_VIEW_ONLY=1
-    ports:
-      - "7901:7900"
-
   firefox:
     image: selenium/node-firefox:4.8.0-20230123
     shm_size: 2gb
@@ -56,7 +42,6 @@ services:
     depends_on:
       - selenium-hub
       - chrome
-      - edge
       - firefox
     environment:
       - HUB_URL=http://selenium-hub:4444
