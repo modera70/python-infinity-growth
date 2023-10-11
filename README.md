@@ -22,7 +22,7 @@ Automation framework developed by using python and Selenium Web Driver.
 2. Clone this repository
 3. Open terminal and navigate to cloned repository
 4. Run docker-compose file:
- > $ docker-compose -f docker-compose-arm.yml up 
+ > $ docker-compose -f docker-compose-arm.yml up --abort-on-container-exit
  
   Open a browser and navigate to http://loclahost:4444 to see the remote sessions:
 
