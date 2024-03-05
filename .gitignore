@@ -60,3 +60,5 @@ assets/
 
 allure*
 tmp/
+
+.DS_Store
