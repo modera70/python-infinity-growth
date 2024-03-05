@@ -56,7 +56,6 @@ __pycache__/
 assets/
 *.html
 
-*.png
 !readme*.png
 
 allure*
